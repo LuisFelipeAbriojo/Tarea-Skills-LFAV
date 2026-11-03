@@ -1,0 +1,12 @@
+Hice el mapa: **`mapas/pobreza_departamento.png`**
+
+Usé la base limpia `salidas/hogares_2024.parquet`, que ya existía, así que no tuve que volver a procesar los zips. Uní los datos con el GeoJSON departamental por código de ubigeo. Los 25 departamentos tienen dato, y Lima y Callao aparecen por separado.
+
+- **Más pobre:** Cajamarca, 45.0 %
+- **Menos pobre:** Ica, 6.0 %
+
+Ambas cifras coinciden con las que la skill da como esperadas. Después de Cajamarca siguen Loreto (43.0 %), Puno (39.9 %), Pasco (39.0 %) y Huánuco (39.0 %).
+
+El mapa usa una escala de rojos de claro a oscuro que empieza en 0, y la leyenda dice «% de personas en pobreza».
+
+Un problema menor: la etiqueta de Callao (33.9 %) se monta sobre la de Lima porque Callao es muy pequeño en el mapa y casi no se lee. Si quieres, la muevo fuera del mapa con una línea que la señale.

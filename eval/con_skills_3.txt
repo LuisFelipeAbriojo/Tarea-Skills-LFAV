@@ -1,0 +1,17 @@
+Hice el mapa: **`mapas/pobreza_departamento.png`**
+
+**Cómo se obtuvo**
+- Como no existía la base de hogares, primero corrí la limpieza de la ENAHO 2024 (módulos 34 y 02). La base salió validada contra el INEI: 33 691 hogares, pobreza nacional de 27.5 % frente al 27.6 % oficial, y 25 departamentos.
+- Las tasas se calcularon con la base de hogares, ponderando por `peso` (= `factor07 × mieperho`), que es el método oficial del INEI.
+- Los datos se unieron con el mapa por código de ubigeo, no por nombre. Los 25 departamentos tienen dato, y Lima y Callao aparecen por separado.
+- La escala va de colores claros a oscuros, empieza en 0 y la leyenda dice «% de personas en pobreza».
+
+**Resultados**
+- **Más pobre: Cajamarca, 45.0 %**. Le siguen Loreto (43.0 %) y Puno (39.9 %).
+- **Menos pobre: Ica, 6.0 %**. Le siguen Moquegua (11.0 %) y Madre de Dios (11.1 %).
+- Las dos cifras coinciden con los valores de referencia de la skill.
+- Otros: Lima 27.1 %, Callao 33.9 %, Cusco 18.5 %.
+
+**Detalle a corregir:** Callao es muy pequeño en el mapa y su etiqueta (33.9) queda tapada por la de Lima. Si el mapa se va a publicar, convendría sacar esa etiqueta con una flecha o ponerla en una nota.
+
+Fuente: INEI, ENAHO 2024.

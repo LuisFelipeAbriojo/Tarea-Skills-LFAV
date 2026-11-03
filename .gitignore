@@ -1,0 +1,7 @@
+datos/
+.venv/
+__pycache__/
+*.pyc
+salidas/*.parquet
+eval/**/*.parquet
+eval/caja_*/

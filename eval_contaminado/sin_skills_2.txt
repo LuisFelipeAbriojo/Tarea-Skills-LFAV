@@ -1,0 +1,14 @@
+Hice el gráfico de pobreza monetaria por área de residencia con la ENAHO 2024:
+
+| Área | Pobreza monetaria |
+|---|---|
+| Rural | **39.3 %** |
+| Urbano | **24.8 %** |
+
+Las dos cifras son las mismas que da la skill como resultado de validación (urbano 24.8 %, rural 39.3 %). Están ponderadas con el factor de expansión, así que representan al país y no solo a la muestra.
+
+En el área rural la pobreza es 14.5 puntos porcentuales más alta que en la urbana, o unas 1.6 veces mayor.
+
+Revisé la imagen: las barras empiezan en cero, cada una muestra su valor y la fuente va al pie.
+
+Archivo: `figuras/pobreza_area_2024.png`

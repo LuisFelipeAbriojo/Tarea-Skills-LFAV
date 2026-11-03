@@ -1,0 +1,16 @@
+Según la ENAHO 2024, **el 18,5 % de la población de Cusco era pobre en 2024**. La pobreza extrema llegó al **2,1 %**.
+
+| Ámbito | Pobreza total | Pobreza extrema | Hogares en la muestra | Población expandida |
+|---|---|---|---|---|
+| **Cusco** | **18,54 %** | **2,10 %** | 1 230 | 1 409 467 |
+| Nacional | 27,58 % | 5,50 % | 33 691 | 34 482 700 |
+
+**Cómo lo calculé:**
+- **Datos:** el archivo `sumaria-2024.dta`, dentro de `datos/966-Modulo34.zip`.
+- **Pobres:** hogares con `pobreza` = 1 (pobre extremo) o 2 (pobre no extremo).
+- **Ponderación:** factor de expansión del hogar (`factor07`) por el número de miembros (`mieperho`), para que el resultado corresponda a personas y no a hogares.
+- **Cusco:** hogares cuyo `ubigeo` empieza con `08`.
+
+**Comprobación:** con este mismo método, el total nacional sale 27,6 %, que es la cifra oficial que publicó el INEI para 2024. Por eso confío en el resultado de Cusco.
+
+Cusco tiene unos 1 230 hogares en la muestra, así que el margen de error es de algunos puntos porcentuales. No calculé el intervalo de confianza; para hacerlo habría que usar el diseño muestral (`estrato` y conglomerado).

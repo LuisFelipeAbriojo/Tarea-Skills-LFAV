@@ -1,0 +1,17 @@
+Hice el mapa: `salidas/mapa_pobreza_departamento_2024.png`. Muestra el porcentaje de población en pobreza monetaria en los 25 departamentos. La tabla con pobreza total, pobreza extrema y tamaño de muestra está en `salidas/pobreza_departamento_2024.csv`.
+
+**Comprobación:** con estos datos, la pobreza nacional sale **27,6 %** y la pobreza extrema **5,5 %**. Son las cifras oficiales del INEI para 2024, así que el cálculo base es correcto.
+
+**Resultados:**
+- **Más pobres:** Cajamarca (45,0 %), Loreto (43,0 %), Puno (39,9 %), Pasco (39,0 %) y Huánuco (39,0 %).
+- **Menos pobres:** Ica (6,0 %), Moquegua (11,0 %), Madre de Dios (11,1 %) y Lambayeque (14,0 %).
+
+**Cómo lo calculé:**
+- Usé la Sumaria (`sumaria-2024.dta`). La versión `-12g` da exactamente el mismo resultado.
+- Ponderé por población: factor de expansión del hogar (`factor07`) × número de miembros (`mieperho`). El departamento sale de los dos primeros dígitos del `ubigeo` y se une con el GeoJSON.
+- El script es `scripts/mapear.py`. Se ejecuta con `uv run python scripts/mapear.py <sumaria.dta> <geojson> <carpeta_salida>`.
+
+**Ten en cuenta:**
+- **Lima va como un solo departamento** (Lima Metropolitana más Lima Provincias), porque así viene el GeoJSON. Callao aparece aparte, con su etiqueta fuera del mapa porque es muy pequeño.
+- **Las tasas por departamento son estimaciones puntuales con márgenes de error amplios.** Cada departamento tiene entre unos 600 y 1.500 hogares en la muestra; Lima, unos 4.500. Por eso el INEI publica los departamentos en grupos de pobreza estadísticamente parecidos, no como un ranking exacto. Diferencias de pocos puntos, por ejemplo Pasco frente a Huánuco, no deben leerse como reales.
+- Extraje los `.dta` en `datos/extraido/`.

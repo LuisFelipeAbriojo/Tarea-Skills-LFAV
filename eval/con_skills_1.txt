@@ -1,0 +1,8 @@
+En 2024, el **18.5 %** de la población de Cusco (departamento, ubigeo 08) era pobre en términos monetarios. La pobreza extrema fue de **2.1 %**.
+
+- **Cómo lo calculé:** con la base de hogares (`salidas/hogares_2024.parquet`, 1,230 hogares de Cusco), ponderando con `peso` = `factor07 × mieperho`. Es el mismo método que usa el INEI.
+- **Comprobación:** con la base de personas ponderada con `facpob07` (3,777 personas) sale la misma cifra, 18.5 %.
+- **Validación:** la limpieza de la ENAHO pasó todos los chequeos. La pobreza nacional da 27.5 %, frente al 27.6 % oficial, una diferencia de 0.07 puntos que está dentro de la tolerancia.
+- **Precaución:** es una estimación hecha con una muestra de unos 1,200 hogares, así que tiene un margen de error de algunos puntos. No calculé el intervalo de confianza.
+
+Fuente: INEI, ENAHO 2024.

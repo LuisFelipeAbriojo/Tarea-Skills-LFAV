@@ -1,0 +1,16 @@
+VALIDACIÓN ENAHO 2024 (código INEI 966)
+====================================================
+Filas del módulo 02: 117,721  ->  residentes habituales: 108,664
+Llaves únicas: OK   Unión m:1 sin pérdidas ni duplicados: OK
+
+Chequeo                             Obtenido    INEI  Estado
+Hogares en la sumaria                  33691   33691  OK
+Residentes habituales                 108664  108664  OK
+Pobreza (personas, facpob07) %         27.53    27.6  OK
+Pobreza extrema %                       5.50     5.5  OK
+Departamentos                             25      25  OK
+
+Cifras complementarias (sumaria, factor07 x mieperho = método INEI):
+  Pobreza nacional: 27.58 %
+  Urbano (estrato <= 5): 24.8 %   Rural: 39.3 %
+  Lima Metropolitana (dominio == 8): 28.2 %

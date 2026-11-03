@@ -1,0 +1,14 @@
+Hice el mapa. Están los 25 departamentos, todos con dato, con Lima y Callao por separado. Se unieron por su código de departamento, no por el nombre.
+
+**Mapa:** `mapas/pobreza_departamento.png`
+
+- **Más pobre:** Cajamarca, con 45,0 % de personas en pobreza.
+- **Menos pobre:** Ica, con 6,0 %.
+
+Ambas cifras coinciden con los valores de referencia de 2024.
+
+Le siguen en pobreza Loreto (43,0 %), Puno (39,9 %), Pasco (39,0 %) y Huánuco (39,0 %). Lima tiene 27,1 % y Callao 33,9 %.
+
+El color va de claro a oscuro en un solo tono, empezando en 0 %, y la leyenda dice «% de personas en pobreza». Las tasas usan el factor de expansión de los hogares, como hace el INEI.
+
+Un detalle del dibujo: el número de Callao (33,9) queda tapado por el de Lima porque Callao es muy pequeño en el mapa. Los datos están bien, solo no se lee esa etiqueta. Si lo necesitas, puedo moverla con una flecha o un recuadro.

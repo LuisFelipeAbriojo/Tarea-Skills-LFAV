@@ -1,0 +1,14 @@
+El gráfico de pobreza monetaria por área de residencia está listo y sus cifras coinciden con las del INEI.
+
+| Área | Pobreza monetaria |
+|---|---|
+| Rural | **39.3 %** |
+| Urbano | **24.8 %** |
+
+En 2024 la pobreza rural supera a la urbana en 14.5 puntos porcentuales.
+
+- **Figura:** `figuras/pobreza_area_2024.png`
+- **Cálculo:** con la base de hogares (`salidas/hogares_2024.parquet`), ponderada con `peso` (factor07 × mieperho), que es el método oficial del INEI.
+- **Bases de datos:** primero tuve que limpiar los módulos 34 y 02 de la ENAHO. Pasaron todos los chequeos de validación: la pobreza nacional por personas dio 27.53 %, frente al 27.6 % oficial.
+
+Fuente: INEI, ENAHO 2024.

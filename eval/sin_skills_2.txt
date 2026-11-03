@@ -1,0 +1,21 @@
+Hice el gráfico de pobreza urbana y rural con la ENAHO 2024, y el total nacional coincide con la cifra oficial del INEI (27,6 %).
+
+| Área | Pobreza total | Pobreza extrema |
+|---|---|---|
+| Nacional | 27,6 % | 5,5 % |
+| Urbana | 24,8 % | 3,1 % |
+| Rural | 39,3 % | 15,5 % |
+
+La pobreza rural es unos 14,5 puntos más alta que la urbana. La pobreza extrema rural es unas 5 veces la urbana.
+
+**Cómo lo calculé:**
+- **Datos:** usé el archivo `sumaria-2024.dta` del módulo 34. También probé con `sumaria-2024-12g.dta` y salen exactamente los mismos resultados.
+- **Población:** las tasas son de personas, no de hogares. Cada hogar se pondera por su factor de expansión (`factor07`) multiplicado por el número de miembros (`mieperho`).
+- **Área:** tomé como urbanos los estratos 1 a 5 y como rurales los estratos 6 a 8, que es el criterio del INEI.
+- **Clasificación:** cuento como pobres a los hogares con `pobreza` igual a 1 o 2. Los que tienen 1 son pobres extremos.
+
+**Archivos creados:**
+- `figuras/pobreza_area_2024.png`: el gráfico.
+- `figuras/pobreza_area_2024.csv`: la tabla con los porcentajes.
+- `scripts/pobreza_area.py`: el script, que se vuelve a correr con `uv run python scripts/pobreza_area.py`.
+- `datos/extraido/`: los `.dta` que saqué del zip.

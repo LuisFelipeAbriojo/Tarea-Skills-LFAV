@@ -1,0 +1,10 @@
+Hice el gráfico de la pobreza monetaria por área de residencia con la ENAHO 2024. Las cifras están ponderadas con el factor de expansión y coinciden con las oficiales:
+
+| Área | Pobreza monetaria |
+|---|---|
+| Rural | **39.3 %** |
+| Urbano | **24.8 %** |
+
+La pobreza rural supera a la urbana en 14.5 puntos porcentuales.
+
+El gráfico está en `figuras/pobreza_area_2024.png`.

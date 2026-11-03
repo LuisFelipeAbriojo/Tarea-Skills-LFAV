@@ -1,0 +1,8 @@
+En 2024, la **pobreza monetaria en Cusco fue de 18.5 %**. Coincide con la cifra oficial del INEI.
+
+- **Pobreza extrema:** 2.1 %.
+- **Base:** `salidas/hogares_2024.parquet`, con los 1,230 hogares de Cusco (ubigeo que empieza con 08).
+- **Peso:** `peso` = `factor07 × mieperho`, que es el método oficial del INEI. Así el resultado se expresa como porcentaje de personas.
+- **Validación:** usé las bases ya generadas. Todos los chequeos de `salidas/validacion.txt` pasan, y la pobreza nacional da 27.6 %, igual a la oficial.
+
+Fuente: INEI, ENAHO 2024.
